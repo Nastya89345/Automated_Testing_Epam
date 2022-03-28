@@ -1,4 +1,4 @@
-# Automated_Testing_Epam
+Maven
 
 
 I Can Win
