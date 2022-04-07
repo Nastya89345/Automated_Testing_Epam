@@ -29,5 +29,6 @@ public class Task03 {
         for (int i = 0; i < n; i++) {
             System.out.println(mas[i]);
         }
+        sc.close();
     }
 }

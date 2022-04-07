@@ -18,42 +18,21 @@ public class Task05 {
             }
             n = sc.nextInt();
         } while (n < 1 || n > 12);
-        if (n == 1) {
-            System.out.println("Januar");
+        switch (n) {
+            case 1 -> System.out.println("Januar");
+            case 2 -> System.out.println("Februar");
+            case 3 -> System.out.println("March");
+            case 4 -> System.out.println("April");
+            case 5 -> System.out.println("May");
+            case 6 -> System.out.println("June");
+            case 7 -> System.out.println("July");
+            case 8 -> System.out.println("August");
+            case 9 -> System.out.println("September");
+            case 10 -> System.out.println("October");
+            case 11 -> System.out.println("November");
+            case 12 -> System.out.println("December");
+            default -> System.out.println("Error");
         }
-        if (n == 2) {
-            System.out.println("Februar");
-        }
-        if (n == 3) {
-            System.out.println("March");
-        }
-        if (n == 4) {
-            System.out.println("April");
-        }
-        if (n == 5) {
-            System.out.println("May");
-        }
-        if (n == 6) {
-            System.out.println("June");
-        }
-        if (n == 7) {
-            System.out.println("July");
-        }
-        if (n == 8) {
-            System.out.println("August");
-        }
-        if (n == 9) {
-            System.out.println("September");
-        }
-        if (n == 10) {
-            System.out.println("October");
-        }
-        if (n == 11) {
-            System.out.println("November");
-        }
-        if (n == 12) {
-            System.out.println("December");
-        }
-
+        sc.close();
     }
 }

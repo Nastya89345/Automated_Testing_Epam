@@ -23,6 +23,7 @@ public class Task07 {
             System.out.println("Enter " + message + ": ");
         }
         v = sc.nextInt();
+        sc.close();
         return v;
     }
 

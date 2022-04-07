@@ -33,6 +33,7 @@ public class Task04 {
         if (v < 0) {
             v = -v;
         }
+        sc.close();
         return v;
     }
 

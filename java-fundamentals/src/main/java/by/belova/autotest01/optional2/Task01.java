@@ -39,6 +39,7 @@ public class Task01 {
         if (v < 0) {
             v = -v;
         }
+        sc.close();
         return v;
     }
 

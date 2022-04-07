@@ -25,6 +25,7 @@ public class Task03 {
             System.out.println("Enter " + message + ": ");
         }
         v = sc.nextInt();
+        sc.close();
         return v;
     }
 
