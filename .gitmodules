@@ -1,0 +1,3 @@
+[submodule "aircompany"]
+	path = aircompany
+	url = git@github.com:vitalliuss/aircompany.git
