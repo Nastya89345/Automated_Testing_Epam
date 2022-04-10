@@ -8,14 +8,9 @@ import plane.Plane;
 import java.util.Arrays;
 import java.util.List;
 
-//import java.util.logging.Level;
-//import java.util.logging.Logger;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
-
-//import org.slf4j.*;
 
 public class Runner {
     static List<Plane> planes = Arrays.asList(
@@ -39,25 +34,6 @@ public class Runner {
         Airport airport = new Airport(planes);
         Airport militaryAirport = new Airport(airport.getMilitaryPlanes());
         Airport passengerAirport = new Airport(airport.getPassengerPanes());
-//        System.out.println("Military airport sorted by max distance: " + militaryAirport
-//                .sortByMaxDistance()
-//                .toString());
-//        System.out.println("Passenger airport sorted by max speed: " + passengerAirport
-//                .sortByMaxSpeed()
-//                .toString());
-//        System.out.println("Plane with max passenger capacity: " + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
-
-
-
-//        Logger logger = Logger.getLogger("firstLogger");
-//        logger.log(Level.INFO,"Military airport sorted by max distance: " + militaryAirport
-//                .sortByMaxDistance()
-//                .toString());
-
-//        logger.log(Level.INFO,"Passenger airport sorted by max speed: " + passengerAirport
-//                .sortByMaxSpeed()
-//                .toString());
-//        logger.log(Level.INFO,"Plane with max passenger capacity: " + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
 
 
         Logger logger  = LogManager.getLogger();
@@ -69,14 +45,5 @@ public class Runner {
                 .toString());
         logger.log(Level.INFO,"Plane with max passenger capacity: " + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
 
-
-//        Logger logger  = LoggerFactory.getLogger(Runner.class);
-//        logger.info("Military airport sorted by max distance: " + militaryAirport
-//                .sortByMaxDistance()
-//                .toString());
-//        logger.info("Passenger airport sorted by max speed: " + passengerAirport
-//                .sortByMaxSpeed()
-//                .toString());
-//        logger.info("Plane with max passenger capacity: " + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
     }
 }
